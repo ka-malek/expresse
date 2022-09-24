@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title my Site
+    link(rel='stylesheet' type='text/css' href='/css/style.css')
+
+  body
+  h1#ti  our home page
+  
+    nav
+      a(href="/") HOME
+      a(href=`/services/${(new Date).getDay()}/${(new Date).getHours()}`) SERVICES
+      a(href=`/contact/${(new Date).getDay()}/${(new Date).getHours()}`) CONTACT
+      div#indicator
+    block content
+    block services
+    block contact

@@ -1,0 +1,16 @@
+extends layout
+
+block contact
+    h1#wa  you can submit any thing that you want us to change or update
+    div.container
+        form(action="")
+            label(for="fname") first name
+            input(type="text")
+
+            label(for="lname") last name
+            input(type="text")
+
+            label(for="subject") Subject
+            textarea#subject(name="", cols="", rows="", placeholder='write something')
+
+            button Submit
